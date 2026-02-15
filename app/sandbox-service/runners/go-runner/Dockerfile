@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get purge -y --auto-remove
 
-RUN useradd -m -u 1000 -s /usr/sbin/nologin sandbox
+RUN useradd -m -u 2000 -s /usr/sbin/nologin sandbox
 
 RUN mkdir -p /sandbox /tmp && \
     chown sandbox:sandbox /sandbox /tmp && \
